@@ -22,13 +22,13 @@
 <body>
   <header></header>
   <main class="main">
+  <div class="container searc">
     <h1 class="text-center title-text"><span class=" text-Color">Red</span> -Store</h1>
-    <div class="search-field ">
-      <div class="search-box ">
-        <input id="input-field" class="search-field " type="text" />
+      <div class="input-group mb-3 mx-auto search-field">
+        <input type="text" class="mx-auto input-field" placeholder="Products" >
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
+        autocomplete="off" id="search-btn" onclick="loadProducts()">
+        Search
         </button>
       </div>
     </div>
@@ -88,6 +88,7 @@
         </div>
       </div>
     </div>
+  
   </main>
   <footer></footer>
 
