@@ -48,6 +48,9 @@ body {
   background-color: aliceblue;
   margin: 10px;
 }
+.icon{
+  color: orange;
+}
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;

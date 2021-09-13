@@ -21,12 +21,18 @@ const showProducts = (products) => {
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
+      <p><i class="fas fa-star icon"></i> ${product.rating.rate}</p>
+      
+      <h4>Total Ratings: ${product.rating.count} </h4>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
+    
   }
 };
+
+//----- Add to cart function-----
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -35,6 +41,8 @@ const addToCart = (id, price) => {
   updateTotal();
   document.getElementById("total-Products").innerText = count;
 };
+
+// input value/innertext assign fuction
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
